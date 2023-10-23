@@ -1,0 +1,26 @@
+site_name: SpawnDev Docs
+site_url: https://blazorjs.spawndev.com
+theme: material
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+nav: 
+ - Home: index.md
+ - BlazorJS:
+   - Intro: blazorjs/intro.md
+   - 'BlazorJSRuntime': blazorjs/BlazorJSRuntime.md
+   - Callback: blazorjs/Callback.md
+   - JSEventCallback: blazorjs/JSEventCallback.md
+   - JSObject: blazorjs/JSObject/JSObject.md
+   - IJSInProcessObjectReference: blazorjs/IJSInProcessObjectReference.md
+   - Union: blazorjs/Union.md
+ - WebWorkers:
+   - Intro: blazorjs-webworkers/intro.md
+   - 'WebWorkers': blazorjs-webworkers/WebWorkers.md
+   - ServiceWorker: blazorjs-webworkers/ServiceWorker.md
+ 
