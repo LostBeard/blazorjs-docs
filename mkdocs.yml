@@ -1,6 +1,9 @@
 site_name: SpawnDev Docs
 site_url: https://blazorjs.spawndev.com
-theme: material
+theme: 
+  name: material
+  features:
+   - navigation.expand
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
