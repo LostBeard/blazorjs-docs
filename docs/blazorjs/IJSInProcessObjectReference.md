@@ -3,15 +3,14 @@
 IJSInProcessObjectReference extensions methods have been added to aid in Javascript interop. JSObject wrapped Javascript objects use the extended IJSInProcessObjectReference reference internally. 
 
 ### IJSInProcessObjectReference extended methods:  
-- CallVoid(string identifier, arg0, ...)
-- Call<T>(string identifier, arg0, ...)
-- CallAsync<T>(string identifier, arg0, ...)
-- CallVoidAsync(string identifier, arg0, ...)
-- Get<T>(int identifier)
-- Get<T>(string identifier)
-- GetAsync<T>(string identifier)
-- Set(int identifier, object? value)
-- Set(string identifier, object? value)
+"identifier", aka property key, can be any type because that is what Javascript allows.
+- CallVoid(object identifier, arg0, ...)
+- Call<T>(object identifier, arg0, ...)
+- CallAsync<T>(object identifier, arg0, ...)
+- CallVoidAsync(object identifier, arg0, ...)
+- Get<T>(object identifier)
+- GetAsync<T>(object identifier)
+- Set(object identifier, object? value)
 
 ```cs
 // Get Set
@@ -23,7 +22,7 @@ var myVar = window.Get<int>("myVar");
 window.CallVoid("addEventListener", "resize", Callback.Create(() => Console.WriteLine("WindowResized")));
 ```
 
-Create a new Javascript object usign the BlazorJSRuntimme (JS)
+Create a new Javascript object using the BlazorJSRuntime (JS)
 ```cs
 IJSInProcessObjectReference worker = JS.New("Worker", myWorkerScript);
 ```

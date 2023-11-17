@@ -27,7 +27,7 @@ public void JSObjectClassTest() {
 }
 ```
 
-Use the extended functions of IJSInProcessObjectReference to work with Javascript objects or use the growing library of over 100 of the most common Javascript objects, including ones for Window, HTMLDocument, WebStorage (localStorage and sessionStorage), WebGL, WebRTC, and more in SpawnDev.BlazorJS.JSObjects. JSObjects are wrappers around IJSInProcessObjectReference that allow strongly typed use.
+Use the extended functions of IJSInProcessObjectReference to work with Javascript objects or use the growing library of over 100 of the most common Javascript objects, including ones for Window, HTMLDocument, Storage (localStorage and sessionStorage), WebGL, WebRTC, and more in SpawnDev.BlazorJS.JSObjects. JSObjects are wrappers around IJSInProcessObjectReference that allow strongly typed use.
 
 Below shows a section of the SpawnDev.BlazorJS.JSObjects.Window class. Window's base type, EventTarget, inherits from JSObject.
 ```cs
@@ -37,7 +37,7 @@ public class Window : EventTarget {
     // here is a property with both getter and setter
     public string? Name { get => JSRef.Get<string>("name"); set => JSRef.Set("name", value); }
     // here is a read only property that returns another JSObject type
-    public WebStorage LocalStorage => JSRef.Get<WebStorage>("localStorage");
+    public Storage LocalStorage => JSRef.Get<Storage>("localStorage");
     // here are methods
     public long SetTimeout(Callback callback, double delay) => JSRef.Call<long>("setTimeout", callback, delay);
     public void ClearTimeout(long requestId) => JSRef.CallVoid("clearTimeout", requestId);    

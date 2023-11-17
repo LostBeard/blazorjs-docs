@@ -18,3 +18,4 @@ Run your Blazor WASM in DedicatedWorkers, SharedWorkers, and even ServiceWorkers
 |---------|-------------|
 |**[SpawnDev.BlazorJS](#spawndevblazorjs)** <br /> [![NuGet version](https://badge.fury.io/nu/SpawnDev.BlazorJS.svg)](https://www.nuget.org/packages/SpawnDev.BlazorJS)| Enhanced Blazor WebAssembly Javascript interop | 
 |**[SpawnDev.BlazorJS.WebWorkers](#spawndevblazorjswebworkers)** <br /> [![NuGet version](https://badge.fury.io/nu/SpawnDev.BlazorJS.WebWorkers.svg)](https://www.nuget.org/packages/SpawnDev.BlazorJS.WebWorkers)| Blazor WASM WebWorkers, SharedWebWorkers, and ServiceWorker |
+

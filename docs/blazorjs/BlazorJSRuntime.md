@@ -12,8 +12,6 @@
 using SpawnDev.BlazorJS;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
-builder.RootComponents.Add<HeadOutlet>("head::after");
 // add SpawnDev.BlazorJS.BlazorJSRuntime
 builder.Services.AddBlazorJSRuntime();
 // other services ...
